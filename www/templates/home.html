@@ -1,0 +1,91 @@
+    <div id="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="row scroll-me">
+                </div>
+            </div>
+        </div>
+            <section class="home_img_section">
+                <div class="row home_container">
+                    <div class="col-md-6" style="  text-align: right;">
+                        <h2>80startups</h2>
+                        <h2 style="padding: 10px 0 10px 35px;border:none;">Make Startups with us.</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="active btn btn-info login_btn">Login</a>
+                        <a ui-sref="add" class="active btn btn-info sign_up_btn">Add your Startup</a>
+                    </div>
+                </div>
+            </section>
+    </div>
+    <!--HEADER SECTION END  -->
+    <section id="services">
+        <div class="container" style="max-width:1300px;">
+            <div class="row text-center">
+                <div class="pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2 style="border-bottom: 4px solid #5c2b7f;"><span></span>Trending Startups</h2>
+                </div>
+            </div>
+            <div class="row text-center pad-bottom_1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+                <div ng-repeat="company in company_list">
+                    <div class="col-md-4">
+                        <img src="assets/img/img_1.jpg">
+                        <a ng-click="companyDetails(company.company_id)">{{company.company_name}}</a>
+                        <img align="left" class="fb-image-profile thumbnail" src="assets/img/logo_1.png" alt="Profile image example"/>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4">
+                    <img src="assets/img/img_1.jpg">
+                    <a ui-sref="details">SurveyMonkey</a>
+                    <img align="left" class="fb-image-profile thumbnail" src="assets/img/logo_1.png" alt="Profile image example"/>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/img_2.jpg">
+                    <a>EyeEm</a>
+                    <img align="left" class="fb-image-profile thumbnail" src="assets/img/logo_2.jpg" alt="Profile image example"/>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/img_3.jpg">
+                    <a>Eli Macy</a>
+                    <img align="left" class="fb-image-profile thumbnail" src="assets/img/logo_3.png"/>
+
+                </div> -->
+        </div>
+
+    </section>
+    <!-- SERVICES SECTION END  -->
+
+    <section id="works">
+        <div class="container" style="max-width:1300px;">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2 style="  border-bottom: 4px solid #5c2b7f;"><span style="width: 94px;"></span>Our Investors</h2>
+                </div>
+            </div>
+            <div class="row text-center pad-bottom_2" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="col-md-4 investor">
+                    <img src="assets/img/man_1.jpg">
+                    <h2 class="man_name">Curious Endeavors</h2>
+                    <p>invested in</p>
+                    <h3>Kamoji Tenjim</h3>
+                    <a href="#" class="active btn btn-info know_more_btn">Know More</a>
+                </div>
+                <div class="col-md-4 investor">
+                    <img src="assets/img/man_2.jpg">
+                    <h2 class="man_name">Scott Hartley</h2>
+                    <p>invested in</p>
+                    <h3>Storefront AirPR</h3>
+                    <a href="#" class="active btn btn-info know_more_btn">Know More</a>
+                </div>
+                <div class="col-md-4 investor">
+                    <img src="assets/img/man_3.jpg">
+                    <h2 class="man_name">Joshua Baer</h2>
+                    <p>invested in</p>
+                    <h3>Bazaarvoice LiveIntent</h3>
+                   <a href="#" class="active btn btn-info know_more_btn">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
